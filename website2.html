@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    
+    <title>
+        birthday wish
+    </title>
+    
+<style>
+        @font-face {
+  font-family: myFirstFont;
+  src: url("animeace2_reg.ttf");
+}
+
+faiza{
+  font-family: myFirstFont;
+}
+        body  {
+  background-image: url("https://images8.alphacoders.com/125/1252336.jpg");
+  background-repeat: no-repeat;
+  background-color: #cccccc;
+  background-size:cover;
+  max-width: 100%;
+  max-height: 100%;
+        }
+        .scroll{
+          animation: glow 2s alternate infinite;
+        }
+
+        .scroll:hover {
+  animation: vibrate 0.5s;
+  animation-iteration-count: infinite;
+
+
+  }
+      .scroll2{
+        animation: glow 2s alternate infinite;
+      }  
+        
+        
+        @keyframes glow {
+  0% { filter: drop-shadow(0 0 10px #f0e661); }
+  100% { filter:drop-shadow(0 0 20px #f0e661); }
+ }
+       
+        @keyframes vibrate {
+  0% { transform: rotate(0deg); }
+  10% { transform: rotate(-1deg); }
+  20% { transform: rotate(1deg); }
+  30% { transform: rotate(0deg); }
+  40% { transform: rotate(1deg); }
+  50% { transform: rotate(-1deg); }
+  60% { transform: rotate(0deg); }
+  70% { transform: rotate(-1deg); }
+  80% { transform: rotate(1deg); }
+  90% { transform: rotate(0deg); }
+  100% { transform: rotate(-1deg); }
+}
+@keyframes glow2 {
+  0% { filter: drop-shadow(0 0 10px #f0e661); }
+  100% { filter:drop-shadow(0 0 15px #f0e661); }
+ }
+       img {
+            cursor: pointer;
+            
+        }
+        .btn{
+          float: right;
+          animation:glow2 2s alternate infinite;
+        }
+        .text {
+          animation: glow2 2s alternate infinite;
+          float:right;
+          
+        }
+        
+      </style>
+</head>
+<body>
+    <img src="C:\Users\arafa\Downloads\wanted.png" height="700" width="500" vspace="100" hspace="690">
+    <img src="C:\Users\arafa\Downloads\scrolloff.png" class="scroll" id="scroll" alt="First Image" onclick="showSecondImage()" style="display: block;" height="500" width="500" vspace="200" hspace="690">
+    <img src="C:\Users\arafa\Downloads\scrollfin.png" class="scroll2" id="scrollon" alt="Second Image" style="display: none;"height="700" width="700" vspace="70" hspace="590" >
+    <a href="website3.html"> <img src="C:\Users\arafa\Downloads\arrowew.png"  style="display: none;" class="btn" id="arrow1" height="100" width="100" > </a>
+    <font size="4" face="myFirstFont" color="#FFD700" class="text" id="text1" style="display: none;" ><center> <br>proceed to your <br> treasure</center></font>
+    <script>
+      function showSecondImage() {
+          var secondImage = document.getElementById("scrollon");
+          var firstImage = document.getElementById("scroll");
+          var arrow = document.getElementById("arrow1")
+          var text = document.getElementById("text1")
+          if (secondImage.style.display === "none") {
+              secondImage.style.display = "block";
+              
+          } else {
+              secondImage.style.display = "none";
+          }
+          if (firstImage.style.display === "block") {
+              firstImage.style.display = "none";
+          } else {
+              firstImage.style.display = "block";
+          }
+          if (arrow.style.display === "none") {
+              arrow.style.display = "block";
+          } else {
+              arrow.style.display = "none";
+          }
+          if (text.style.display === "none") {
+              text.style.display = "block";
+          } else {
+              text.style.display = "none";
+          }
+      }
+  </script>
+</body>
+</html>                                                                     

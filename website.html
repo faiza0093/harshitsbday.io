@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    
+    <title>
+        DO NOT CLICK
+    </title>
+    
+        <style> 
+@font-face {
+  font-family: myFirstFont;
+  src: url("animeace2_reg.ttf");
+}
+
+faiza{
+  font-family: myFirstFont;
+}
+</style>
+
+<style>
+        
+        body  {
+  background-image: url("E:\luffy.jpg");
+  background-color: #cccccc;
+  background-size: 1920px 920px;
+  background-position: absolute;
+  
+       
+        
+        .btn {
+            cursor:pointer; 
+            background-color: rgb(12, 55, 114);
+            color: white;
+            height: 50px;
+            width: 90px;
+            font-size: 25px;
+            border-radius: 6px;
+            transition: opacity 0.15s;
+            position:absolute;
+            margin-left:800px;
+        }
+        .btn:hover{
+            opacity: 0.8;}
+            .btn:active{
+                opacity: 0.4;
+            }
+            #noButton {
+                position: absolute;
+                margin-left: 980px;
+                transition: 0.5s;
+        }
+    </style>
+</head>
+<body >
+
+    <img src="E:\giphy.gif" vspace="80" hspace="700">
+   <center><font size="10" face="myFirstFont" > Are you ready for the surprise?</font></center>
+    <br><br>
+    
+        <a href="website2.html"><button class="btn" >
+            <faiza>yes</faiza>
+        </button></a>
+        <button class="btn" id="noButton" onclick="changeButtonPosition()" onmouseover="changeButtonPosition()">
+            <faiza>no</faiza>
+        </button>
+    
+        <script>
+            function changeButtonPosition() {
+                // Get the button element
+                var button = document.getElementById('noButton');
+    
+                // Generate random positions
+                var randomTop = Math.floor(Math.random() * window.innerHeight);
+                var randomLeft = Math.floor(Math.random() * window.innerWidth);
+    
+                // Set the new positions
+                button.style.top = randomTop + 'px';
+                button.style.left = randomLeft + 'px';
+            }
+        </script>
+    
+</body>
+</html>
+
